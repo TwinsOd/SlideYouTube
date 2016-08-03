@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.slideyoutubelibs.DraggableView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:draggable_view="http://schemas.android.com/tools"
+    android:id="@+id/draggable_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    draggable_view:bottom_view_id="@+id/second_view"
+    draggable_view:top_view_id="@+id/drag_view">
+
+  <FrameLayout
+      android:id="@+id/second_view"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@+id/drag_view"/>
+
+
+  <FrameLayout
+      android:id="@+id/drag_view"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:orientation="vertical">
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@android:color/black" />
+
+      <FrameLayout
+          android:id="@+id/drag_view_player"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_alignParentTop="true"
+          android:orientation="vertical" />
+
+  </FrameLayout>
+
+</com.example.slideyoutubelibs.DraggableView>
