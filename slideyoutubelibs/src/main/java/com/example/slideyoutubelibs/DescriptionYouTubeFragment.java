@@ -3,6 +3,7 @@ package com.example.slideyoutubelibs;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -126,6 +127,9 @@ public class DescriptionYouTubeFragment extends Fragment {
             try {
                 URL url = new URL("https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id="
                         + params[1] + "&key=" + params[0]);
+                Log.i("MyLog", "url = "+ url);
+                Log.i("MyLog", "params[1] = "+ params[1]);
+                Log.i("MyLog", "params[0] = "+ params[0]);
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
 
