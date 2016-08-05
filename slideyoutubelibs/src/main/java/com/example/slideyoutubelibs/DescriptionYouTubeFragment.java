@@ -49,7 +49,7 @@ public class DescriptionYouTubeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View mView = inflater.inflate(R.layout.fragment_open_youtube_modal, container, false);
+        View mView = inflater.inflate(R.layout.fragment_description_youtube, container, false);
         tvTitle =(TextView)mView.findViewById(R.id.video_title);
         tvDescription =(TextView)mView.findViewById(R.id.video_descr);
         tvDate =(TextView)mView.findViewById(R.id.video_publish_date);
